@@ -40,7 +40,7 @@ async def _handle_stream_message(websocket, message):
             'event': 'text_stream',
             'message_num': message_num,
             'text': to_send
-        }))
+        }, ensure_ascii=False))
 
         await asyncio.sleep(0)
         skip_index += len(to_send)
@@ -49,7 +49,7 @@ async def _handle_stream_message(websocket, message):
     await websocket.send(json.dumps({
         'event': 'stream_end',
         'message_num': message_num
-    }))
+    }, ensure_ascii=False))
 
 
 @with_api_lock
@@ -71,7 +71,7 @@ async def _handle_chat_stream_message(websocket, message):
             'event': 'text_stream',
             'message_num': message_num,
             'history': a
-        }))
+        }, ensure_ascii=False))
 
         await asyncio.sleep(0)
         message_num += 1
@@ -79,7 +79,7 @@ async def _handle_chat_stream_message(websocket, message):
     await websocket.send(json.dumps({
         'event': 'stream_end',
         'message_num': message_num
-    }))
+    }, ensure_ascii=False))
 
 
 async def _handle_connection(websocket, path):
