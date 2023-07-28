@@ -12,7 +12,7 @@ from modules.chat import generate_chat_reply
 from modules.text_generation import generate_reply
 from websockets.server import serve
 
-PATH = '/api/v1/stream'
+PATH = '/api/v1/chat-stream'
 
 
 @with_api_lock
