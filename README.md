@@ -1,4 +1,45 @@
-# Text generation web UI
+# Chat Foodie Chatbot Websocket server
+
+Websocket server for [chatfoodie AI(food recommendation chatbot)](https://github.com/jagaldol/chat-foodie).
+
+> This server operates using an API extension based on [oobabooga/text-generation-webui](https://github.com/oobabooga/text-generation-webui).
+
+## Installation
+
+Please check the [installation of the original repo](https://github.com/oobabooga/text-generation-webui#installation).
+
+## Execution
+
+### Download model
+
+    python download-model.py beomi/KoAlpaca-Polyglot-5.8B
+
+### Download LoRA
+
+    python download-model.py sm136599/chatfoodie-koalpaca-polyglot-5_8b-2050step-4batch_1epoch
+
+### Execute server
+
+    python server.py --api --cpu --model beomi_KoAlpaca-Polyglot-5.8B --lora sm136599_chatfoodie-koalpaca-polyglot-5_8b-2050step-4batch_1epoch
+
+## REF
+
+This repo is [oobabooga/text-generation-webui](https://github.com/oobabooga/text-generation-webui)'s fork repo.
+
+For contributions, please go there.
+
+<br/>
+
+<br/>
+
+
+<details>
+
+<summary>Text generation web UI</summary>
+
+<br/>
+
+<br/>
 
 A gradio web UI for running Large Language Models like LLaMA, llama.cpp, GPT-J, OPT, and GALACTICA.
 
@@ -349,3 +390,5 @@ The presets that are included by default are the result of a contest that receiv
 
 * Subreddit: https://www.reddit.com/r/oobaboogazz/
 * Discord: https://discord.gg/jwZCF2dPQN
+
+</details>
