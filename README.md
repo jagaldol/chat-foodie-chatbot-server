@@ -20,7 +20,7 @@ Please check the [installation of the original repo](https://github.com/oobaboog
 
 ### Execute server
 
-    python server.py --api --cpu --model beomi_KoAlpaca-Polyglot-5.8B --lora sm136599_chatfoodie-koalpaca-polyglot-5_8b-2050step-4batch_1epoch
+    python server.py --api --api-streaming-port 80 --cpu --model beomi_KoAlpaca-Polyglot-5.8B --lora sm136599_chatfoodie-koalpaca-polyglot-5_8b-2050step-4batch_1epoch
 
 ## REF
 
