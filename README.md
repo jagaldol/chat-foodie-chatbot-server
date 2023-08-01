@@ -16,17 +16,16 @@ Please check the [installation of the original repo](https://github.com/oobaboog
 
 ### Download LoRA
 
-    python download-model.py sm136599/chatfoodie-koalpaca-polyglot-5_8b-2050step-4batch_1epoch
-
+    python download-model.py sm136599/chatfoodie-koalpaca-polyglot-5_8b-5150step-8batch_5epoch
 ### Execute server
 
 * Run in CPU  
     ```sh
-    python server.py --api --api-streaming-port 80 --cpu --model beomi_KoAlpaca-Polyglot-5.8B --lora sm136599_chatfoodie-koalpaca-polyglot-5_8b-2050step-4batch_1epoch
+    python server.py --api --api-streaming-port 80 --cpu --model beomi_KoAlpaca-Polyglot-5.8B --lora sm136599_chatfoodie-koalpaca-polyglot-5_8b-5150step-8batch_5epoch
     ```
 * Run in GPU  
     ```sh
-    python server.py --api --api-streaming-port 80 --load-in-4bit --model beomi_KoAlpaca-Polyglot-5.8B --lora sm136599_chatfoodie-koalpaca-polyglot-5_8b-2050step-4batch_1epoch
+    python server.py --api --api-streaming-port 80 --load-in-4bit --model beomi_KoAlpaca-Polyglot-5.8B --lora sm136599_chatfoodie-koalpaca-polyglot-5_8b-5150step-8batch_5epoch
     ```
 
 ## TODO
